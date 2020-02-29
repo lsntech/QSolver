@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="myForm">
+      <h3>Question Solver</h3>
+      <h4>This tool can extract key words from a text or solve math calculations </h4>
+
+      <fieldset>
+        <textarea id="texto" placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+
+      <h2>Select the operation to be perfomed</h2>
+
+      <ul>
+        <li>
+          <input type="radio" name="op" id="math" checked />
+          <label for="math"><b>Math Processing</b> (by WolframAlpha.com)</label>
+
+          <div class="check"></div>
+        </li>
+
+        <li>
+          <input type="radio" name="op" id="nlp" />
+          <label for="nlp"><b>Natural Language Processing</b> (by IBM Watson)</label>
+
+          <div class="check"></div>
+        </li>
+      </ul>
+
+      <fieldset>
+        <button name="submit" onclick="getElementos()" type="submit" id="contact-submit"
+          data-submit="...Sending">Submit</button>
+      </fieldset>
+
+    </div>
+  </div>
+
+
+  <div class="card">
+
+    <fieldset>
+      <h2 id="texto1">0</h2>
+    </fieldset>
+
+  </div>
+
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>

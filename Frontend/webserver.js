@@ -1,6 +1,9 @@
 const http = require('http');
 const fs = require('fs');
 
+/*
+Simple webserver who works like a proxy
+*/
 
 
 const server = http.createServer((req, res)=>{
@@ -53,7 +56,7 @@ console.log("Server request " + req.url);
             case '/scripts.js' :
                     fs.readFile('static/scripts.js', 'utf8', (error, home)=>{
                     res.writeHead(200, {"Content-Type" : "text/javascript"});
-                    res.write(home); // redundante, mas best pratice por causa que no request eh obrigatorio o uso de end().
+                    res.write(home); // redundante, mas best pratice por causa que no http.request eh obrigatorio o uso de end().
                     res.end();
                     });
             break

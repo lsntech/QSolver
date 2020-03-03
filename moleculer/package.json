@@ -23,7 +23,6 @@
     "moleculer-repl": "^0.6.2"
   },
   "dependencies": {
-    "amqplib": "^0.5.5",
     "ibm-watson": "^5.4.0",
     "moleculer": "^0.14.0",
     "moleculer-db": "^0.8.4",

@@ -180,12 +180,12 @@ fieldset {
 	display: flex;
 	flex-direction: column;	
 	background: var(--white);
-	width: 300px;
+	width: 400px;
 	padding: 20px 25px;
 	border-radius: 20px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.13);
   
-  margin: 0 auto;
+  margin: 0 auto; 
   position: relative;
 
 }

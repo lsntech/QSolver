@@ -19,45 +19,31 @@ services:
     networks:
       - internal
 
-  greeter:
+  math:
     build:
       context: .
     image: moleculer-demo
-    container_name: greeter1
+    container_name: math
     env_file: docker-compose.env
     environment:
-      SERVICES: greeter
+      SERVICES: math
     depends_on:
       - nats
     networks:
       - internal
 
-  greeter2:
+  nlp:
     build:
       context: .
     image: moleculer-demo
-    container_name: greeter2
+    container_name: nlp
     env_file: docker-compose.env
     environment:
-      SERVICES: greeter
+      SERVICES: nlp
     depends_on:
       - nats
     networks:
       - internal      
-
-  helper:
-    build:
-      context: .
-    image: moleculer-demo
-    container_name: helper
-    env_file: docker-compose.env
-    environment:
-      SERVICES: helper
-    depends_on:
-      - nats
-    networks:
-      - internal         
-
 
   nats:
     image: nats:2

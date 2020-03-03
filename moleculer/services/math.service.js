@@ -8,6 +8,7 @@ let keys = JSON.parse(file);
 const waApi = WolframAlphaAPI(keys["wolfram"]); // API authentication.
 
 
+
 /*
   Function send a call to the wolfram API
 */

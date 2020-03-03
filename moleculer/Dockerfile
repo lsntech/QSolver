@@ -1,14 +1,15 @@
 FROM node:current-alpine
 
-ENV NODE_ENV=production
-
 RUN mkdir /app
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY wolfram-alpha-api-1.0.0-rc.1.tgz /app
 
-RUN npm install --production
+COPY package.json ./
+
+
+RUN npm install
 
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]

@@ -176,15 +176,22 @@ fieldset {
 
 /* Card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.grid-container{
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;	
 	background: var(--white);
 	width: 400px;
-	padding: 20px 25px;
-	border-radius: 20px;
+  padding: 20px 25px;
+  border-radius: 20px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.13);
-  
   margin: 0 auto; 
   position: relative;
 
@@ -202,7 +209,7 @@ input[type=radio] {
 label { 
 	cursor: pointer; 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   text-align: var(--text);
 }
 

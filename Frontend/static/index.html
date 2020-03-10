@@ -1,3 +1,10 @@
+<!-- /*
+ * Project: Qsolver
+ *
+ * Copyright(c) 2020 Leandro Silva
+ * License: MIT Licensed
+ */ -->
+
 <html>
 
 <head>
@@ -10,7 +17,7 @@
   <div class="container">
     <div id="myForm">
       <h3>Question Solver</h3>
-      <h4>This tool can extract key words from a text or solve math calculations </h4>
+      <h4>This tool can extract keywords from a text or solve math calculations </h4>
 
       <fieldset>
         <textarea id="texto" placeholder="Type your message here...." tabindex="5" required></textarea>
@@ -43,27 +50,33 @@
   </div>
 
 
-  <div style="width: 100%; display: table;">
-
-    <div style="display: table-row;"> 
-    
-    <div id="entidades" class="card" style="width: 400px; display: table-cell;">
-    <p><h3 >Entidades</h3></p> 
-    </div>
-    
-    <div id="keywords" class="card" style="width: 400px; display: table-cell; ">
-    <p><h3>Keywords</h3></p> 
-    </div>
-    
-    <div id="wolfram" class="card" style="width: 400px; display: table-cell;">
-    <p><h3>wolfram</h3></p> 
-    </div>
-    
-    </div>
-    </div>
 
 
-<script src="scripts.js"></script>
+  <div class="grid-container">
+
+    <div id="entidades" class="card">
+      <p>
+        <h2>Entidades</h2>
+      </p>
+    </div>
+
+    <div id="keywords" class="card">
+      <p>
+        <h2>Keywords</h2>
+      </p>
+    </div>
+
+    <div id="wolfram" class="card">
+      <p>
+        <h2>wolfram</h2>
+      </p>
+    </div>
+
+  </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
 
 </body>
 

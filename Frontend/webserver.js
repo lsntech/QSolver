@@ -1,9 +1,14 @@
+/*
+ * Project: Qsolver
+ * Module: webserver
+ * Desctiption: Simple webserver who works like a proxy
+ * Copyright(c) 2020 Leandro Silva
+ * License: MIT Licensed
+ */
+
+
 const http = require('http');
 const fs = require('fs');
-
-/*
-Simple webserver who works like a proxy
-*/
 
 
 const server = http.createServer((req, res)=>{
@@ -16,9 +21,7 @@ const server = http.createServer((req, res)=>{
         
     }
 
-res.writeHead(200, headers);    // Aplica as config de header, permitindo acesso via CORS 
-
-console.log("Server request " + req.url);
+res.writeHead(200, headers);    
 
  if(['GET','POST'].indexOf(req.method) > -1){
       

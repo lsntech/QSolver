@@ -1,3 +1,12 @@
+/*
+ * Project: Qsolver
+ * Module: Math.service
+ * Desctiption: Service worker who make requests to wolframAPI.
+ * Copyright(c) 2020 Leandro Silva
+ * License: MIT Licensed
+ */
+
+
 const fs = require('fs');
 const WolframAlphaAPI = require('wolfram-alpha-api');
 
@@ -6,6 +15,7 @@ let file = fs.readFileSync("../../keys.txt", 'utf8');
 let keys = JSON.parse(file);
 
 const waApi = WolframAlphaAPI(keys["wolfram"]); // API authentication.
+
 
 
 

@@ -1,3 +1,11 @@
+/*
+ * Project: Qsolver
+ * Module: Nlp.service
+ * Desctiption: Service worker who make requests to IBM Watson.
+ * Copyright(c) 2020 Leandro Silva
+ * License: MIT Licensed
+ */
+
 const fs = require('fs');
 const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1');
 const { IamAuthenticator } = require('ibm-watson/auth');
@@ -12,7 +20,7 @@ IBM Cloud require the creation of a service instance before to use their API.
 */
 
 const nlu = new NaturalLanguageUnderstandingV1({
-	authenticator: new IamAuthenticator({ apikey: keys["watson"]}),
+	authenticator: new IamAuthenticator({ apikey: keys}),
 	version: '2018-04-05',
 	url: 'https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/f309d79c-778d-40ba-800f-9890c7bf0ce8'
 });

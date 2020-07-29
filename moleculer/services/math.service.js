@@ -23,6 +23,8 @@ const waApi = WolframAlphaAPI(keys["wolfram"]); // API authentication.
   Function send a call to the wolfram API
 */
 
+
+
 async function mathSolver(expression){
     
    return waApi.getShort(expression).
@@ -57,3 +59,4 @@ module.exports = {
         }
     }
 };
+

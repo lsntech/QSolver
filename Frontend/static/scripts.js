@@ -21,7 +21,7 @@ function getElementos() {
   });
 }
 
-
+/*
 function formSubmit(sendData, renderMethod) {
   var xhttp = new XMLHttpRequest();
   xhttp.open("POST", "http://localhost:3015/process");
@@ -37,6 +37,14 @@ function formSubmit(sendData, renderMethod) {
     }
   };
 }
+*/
+
+function formSubmit(sendData, renderMethod){
+
+  
+
+}
+
 
 function renderWatson(data) {
   data = JSON.parse(data);
